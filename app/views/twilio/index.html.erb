@@ -1,0 +1,7 @@
+<%= form_tag("twilio", method: "post", :html => {:name => 'myForm'}) do %>
+	<%= label_tag(:q, "Enter 10 digit Phone Number") %><br>
+	<%= telephone_field(:user, :phone, size: 10, maxlength: 10 ) %><br>
+	<%= label_tag(:p, "Enter text", class: 'label') %><br>
+	<%= text_area_tag(:body, nil, size: "31x6", maxlength: 160) %>
+	<%= submit_tag("send", data: { disabled_with: "sending..." }) %>
+	<% end %>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" =>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="container">
+	<header>
+
+		<nav>	<%= link_to 'SMS', root_url %>	</nav>
+
+	</header>
+	<div id="main">
+		<article>
+
+		<%= yield %>
+		
+		</article>
+	</div><br><br><br><br><br>
+	<footer>
+		
+		<p>SMS &copy; is a simple web app made by Micah Martin</p><br>
+
+
+	</footer>
+
+
+</div>
+</body>
+</html>
